@@ -38,28 +38,27 @@ app.get('/getBankDetails/:bankName', (req, res) => {
     switch(chosenBank) {
         case "CIB": 
             res.status(200).json({
+                bankName: "Commercial International Bank",
                 EGPAccount: "100009126583",
-                USDAccount: "100009986329",
-                EURAccount: "100018096093",
-                SWIFTCode: "CIBEEGCX007",
-                IBAN_EGP: "EG720010000700000100009126583",
-                IBAN_USD: "EG970010000700000100009986329"
             })
             break;
         
         case "NBE":
             res.status(200).json({
+                bankName: "National Bank of Egypt",
                 EGPAccount: "0773060451108100016"
             })
             break;
         case "BanqueMisr":
             res.status(200).json({
+                bankName: "Banque Misr",
                 EGPAccount: "1550001000106952"
             })
             break;
 
         case "BankOfAlexandria":
             res.status(200).json({
+                bankName: "Bank of Alexandria",
                 EGPAccount: "101796733001"
             })
             break;
