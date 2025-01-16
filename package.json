@@ -1,0 +1,16 @@
+{
+  "name": "paymentapi",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Abdelrahman Gamal",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
