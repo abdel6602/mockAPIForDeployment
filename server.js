@@ -5,6 +5,14 @@ const port = 3000;
 
 app.use(express.json());
 
+app.get('/ping', (req, res) => {
+    console.log("processing GET from ip:" + req.ip);
+    res.json({
+        message: "pong"
+    });
+    console.log("processed GET from ip:" + req.ip);
+})
+
 app.get('/availableBanks' , (req, res) => {
 
     console.log("processing GET from ip:" + req.ip);
